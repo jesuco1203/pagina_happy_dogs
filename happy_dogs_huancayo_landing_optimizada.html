@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Dogs Huancayo | Paseador de Perros en El Tambo y Huancayo</title>
+  <meta name="description" content="Paseos de perros seguros y cariñosos en El Tambo y Huancayo. Planes de 30 y 60 min, paquete semanal. Reserva por WhatsApp." />
+  <link rel="canonical" href="https://tudominio.pe/" />
+
+  <!-- Favicon (Icono de la pestaña) -->
+  <link rel="icon" href="https://i.imgur.com/2KfT72H.png" type="image/png" />
+  <link rel="shortcut icon" href="https://i.imgur.com/2KfT72H.png" type="image/png" />
+  <link rel="apple-touch-icon" href="https://i.imgur.com/2KfT72H.png" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  
+
+<link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+
+  
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  
+  
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+  
+
+<style>
+    /* Aseguramos que Inter sea la fuente si está disponible, como fallback a la de Tailwind */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Patrón de fondo sutil para la sección de servicios */
+    .bg-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%239333ea' fill-opacity='0.05' d='M40 0L50 10L40 20L30 10zM0 40L10 50L0 60L-10 50zM80 40L90 50L80 60L70 50zM40 80L50 90L40 100L30 90z'%3E%3C/path%3E%3C/svg%3E");
+    }
+
+    /* Animación de pulso para el botón flotante de WhatsApp */
+    .whatsapp-float {
+      animation: pulse-float 2s infinite ease-out;
+    }
+    @keyframes pulse-float {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 12px rgba(34, 197, 94, 0);
+      }
+    }
+
+    /* Scroll suave */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Estilos para la transición de la hamburguesa */
+    .navbar-toggle .hamburger-line {
+      transition: all 0.3s ease-in-out;
+    }
+    .navbar-toggle[aria-expanded="true"] .hamburger-top {
+      transform: rotate(45deg) translate(5px, 6px);
+    }
+    .navbar-toggle[aria-expanded="true"] .hamburger-middle {
+      opacity: 0;
+    }
+    .navbar-toggle[aria-expanded="true"] .hamburger-bottom {
+      transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    /* Transición de opacidad del carrusel */
+    .carousel-item {
+      transition: opacity 1s ease-in-out;
+    }
+    
+    /* Para el fondo de superposición del carrusel */
+    .carousel-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+    .carousel-content {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PetService",
+    "name": "Happy Dogs Huancayo",
+    "image": "https://huggingface.co/spaces/jesuco/pawsome-walks-tailspin/resolve/main/images/IMG_20251024_184400.jpg",
+    "url": "https://tudominio.pe/",
+    "telephone": "+51 941 444 159",
+    "priceRange": "S/13 - S/60",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Huancayo",
+      "addressRegion": "Junín",
+      "addressCountry": "PE"
+    },
+    "areaServed": ["El Tambo","Huancayo"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "08:00",
+      "closes": "19:00"
+    }],
+    "sameAs": ["https://wa.me/51941444159"]
+  }
+  </script>
+</head>
+<body class="bg-gray-50 font-sans">
+  
+  
+
+<custom-navbar></custom-navbar>
+
+  
+
+<hero-carousel></hero-carousel>
+
+  
+
+<animated-stats></animated-stats>
+
+  
+
+<section id="sobre-mi" class="section py-20 bg-gradient-to-br from-gray-50 to-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+          Conoce a Tu Paseador
+        </h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-3xl transform rotate-3"></div>
+            <img
+              src="https://i.imgur.com/migXXvP.jpeg"
+              alt="Fabio Chávez Talavera paseando un perro en El Tambo, Huancayo"
+              loading="lazy" decoding="async" width="1200" height="900"
+              class="relative rounded-3xl shadow-2xl w-full object-cover" />
+          </div>
+        </div>
+        <div data-aos="fade-left" class="space-y-6">
+          <h3 class="text-3xl font-bold text-gray-800 mb-4">¡Hola! Soy Fabio Chavez Talavera</h3>
+          <p class="text-gray-600 text-lg leading-relaxed">
+            Soy amante apasionado de los animales y tu vecino de confianza en El Tambo. Mi misión es que tu perro viva la mejor experiencia, combinando seguridad, responsabilidad y mucho cariño.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white flex-shrink-0">
+                <i data-feather="map-pin"></i>
+              </div>
+              <p class="text-gray-700">Conozco cada rincón seguro de El Tambo y Huancayo</p>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white flex-shrink-0">
+                <i data-feather="heart"></i>
+              </div>
+              <p class="text-gray-700">Trato cada perro como si fuera mío</p>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white flex-shrink-0">
+                <i data-feather="shield"></i>
+              </div>
+              <p class="text-gray-700">Total compromiso con su bienestar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+<section id="servicios" class="section py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 relative overflow-hidden">
+    <div class="absolute inset-0 bg-pattern opacity-5" aria-hidden="true"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-4">
+          Servicios Premium
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">Elige el plan perfecto para tu mejor amigo</p>
+        <div class="w-24 h-1 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="service-card group" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full flex flex-col">
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-cyan-400"></div>
+            <div class="p-8 flex flex-col flex-grow">
+              <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i data-feather="star" class="text-white text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Paseo Premium</h3>
+              <p class="text-gray-600 mb-6 flex-grow">Experiencia de 60 min con ejercicio, juego y socialización.</p>
+              <div class="mb-6">
+                <span class="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">S/13</span>
+                <span class="text-gray-500">/60 min</span>
+              </div>
+              <a href="https://wa.me/51941444159?text=Hola%20vi%20la%20web%20y%20quiero%20el%20Paseo%20Premium%20de%20S/13.&utm_source=web&utm_medium=cta&utm_campaign=landing"
+                 class="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold py-3 px-6 rounded-xl inline-block transition-all duration-300 text-center"
+                 aria-label="Reservar Paseo Premium por WhatsApp">
+                Reservar por WhatsApp en 1 clic
+              </a>
+            </div>
+          </div>
+        </div>
+
+        
+
+<div class="service-card transform md:scale-105" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-600 to-pink-600 shadow-2xl h-full flex flex-col">
+            <div class="absolute top-4 right-4 bg-yellow-400 text-gray-800 text-xs font-bold px-3 py-1 rounded-full">
+              MÁS POPULAR
+            </div>
+            <div class="p-8 text-white flex flex-col flex-grow">
+              <div class="w-16 h-16 bg-white/20 backdrop-blur rounded-2xl flex items-center justify-center mb-6">
+                <i data-feather="sun" class="text-white text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Paseo Extendido</h3>
+              <p class="text-white/90 mb-6 flex-grow">La aventura definitiva. Dos horas de exploración, ejercicio intenso y socialización.</p>
+              <div class="mb-6">
+                <span class="text-4xl font-bold">S/18</span>
+                <span class="text-white/80">/2h</span>
+              </div>
+              <a href="https://wa.me/51941444159?text=Hola%20vi%20la%20web%20y%20quiero%20el%20Paseo%20Extendido%20de%202h.&utm_source=web&utm_medium=cta&utm_campaign=landing"
+                 class="w-full bg-white hover:bg-gray-100 text-purple-600 font-bold py-3 px-6 rounded-xl inline-block transition-all duration-300 text-center"
+                 aria-label="Reservar Paseo Extendido por WhatsApp">
+                ¡Lo Quiero!
+              </a>
+            </div>
+          </div>
+        </div>
+
+        
+
+<div class="service-card group" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full flex flex-col">
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-green-400 to-emerald-400"></div>
+            <div class="p-8 flex flex-col flex-grow">
+              <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-emerald-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <i data-feather="calendar" class="text-white text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Paquete Semanal</h3>
+              <p class="text-gray-600 mb-6 flex-grow">5 paseos premium (60 min/día) con descuento. Lunes a Viernes.</p>
+              <div class="mb-6">
+                <span class="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">S/60</span>
+                <span class="text-gray-500">/semana</span>
+              </div>
+              <a href="https://wa.me/51941444159?text=Hola%20vi%20la%20web%20y%20quiero%20el%20Paquete%20Semanal.&utm_source=web&utm_medium=cta&utm_campaign=landing"
+                 class="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-3 px-6 rounded-xl inline-block transition-all duration-300 text-center"
+                 aria-label="Reservar Paquete Semanal por WhatsApp">
+                Ahorrar Ahora
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+<section id="zona" class="section py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white relative overflow-hidden">
+    <div class="absolute inset-0" aria-hidden="true">
+      <div class="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-pink-900/20"></div>
+    </div>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Zona de Cobertura</h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">Servicios profesionales en toda el área de El Tambo y Huancayo</J>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right" class="space-y-6">
+          <h3 class="text-2xl font-bold text-white mb-6">Áreas de Servicio</h3>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <i data-feather="check" class="text-white text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white">El Tambo</h4>
+                <p class="text-gray-400">Zonas urbanas y residenciales</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <i data-feather="check" class="text-white text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white">Huancayo</h4>
+                <p class="text-gray-400">Parques y zonas seguras para paseos</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-purple-600 to-pink-600 p-6 rounded-2xl mt-8">
+            <h4 class="text-xl font-bold mb-2">¿Estás fuera de estas áreas?</h4>
+            <p class="text-white/90 mb-4">Contáctanos y encontraremos una solución</p>
+            <a href="https://wa.me/51941444159?text=Hola%20vivo%20fuera%20de%20su%20zona%20de%20cobertura%2C%20%C2%BFpueden%20ayudarme%3F&utm_source=web&utm_medium=cta&utm_campaign=landing"
+               class="inline-block bg-white text-purple-600 font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition-colors"
+               aria-label="Consultar disponibilidad por WhatsApp">
+              Consultar Disponibilidad
+            </a>
+          </div>
+        </div>
+
+        <div data-aos="fade-left" class="relative">
+          <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl transform rotate-1 opacity-20" aria-hidden="true"></div>
+          <div class="relative bg-gray-800 rounded-3xl overflow-hidden shadow-2xl border border-gray-700">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15607.13329971911!2d-75.21556885816993!3d-12.062016335198424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e96495b525a7f%3A0x603f3603b708b58a!2sUrb%20Siglo%20XX%2C%20Huancayo%2012007!5e0!3m2!1ses-419!2spe!4v1729817555896!5m2!1ses-419!2spe"
+              width="100%" height="400" style="border:0;" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              class="w-full" title="Mapa de Zona de Cobertura">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+<section id="faqs" class="py-16 bg-white">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center" data-aos="fade-up">Preguntas Frecuentes</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div data-aos="fade-up" data-aos-delay="100">
+          <details class="p-6 bg-gray-50 rounded-2xl shadow-sm cursor-pointer group">
+            <summary class="flex justify-between items-center font-semibold text-gray-800">
+              ¿Qué pasa si llueve?
+              <i data-feather="chevron-down" class="group-open:rotate-180 transition-transform"></i>
+            </summary>
+            <p class="mt-3 text-gray-600">Paseamos con impermeable y priorizamos rutas seguras. Si la lluvia es intensa, reprogramamos sin costo.</p>
+          </details>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <details class="p-6 bg-gray-50 rounded-2xl shadow-sm cursor-pointer group">
+            <summary class="flex justify-between items-center font-semibold text-gray-800">
+              ¿Aceptan perros grandes o reactivos?
+              <i data-feather="chevron-down" class="group-open:rotate-180 transition-transform"></i>
+            </summary>
+            <p class="mt-3 text-gray-600">Sí, con evaluación previa y uso de arnés/correa adecuados. Seguridad ante todo.</p>
+          </details>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300">
+          <details class="p-6 bg-gray-50 rounded-2xl shadow-sm cursor-pointer group">
+            <summary class="flex justify-between items-center font-semibold text-gray-800">
+              ¿Cómo coordino el horario?
+              <i data-feather="chevron-down" class="group-open:rotate-180 transition-transform"></i>
+            </summary>
+            <p class="mt-3 text-gray-600">Escríbenos por WhatsApp y confirmamos la franja disponible el mismo día.</p>
+          </details>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400">
+          <details class="p-6 bg-gray-50 rounded-2xl shadow-sm cursor-pointer group">
+            <summary class="flex justify-between items-center font-semibold text-gray-800">
+              ¿Qué incluyen los paseos?
+              <i data-feather="chevron-down" class="group-open:rotate-180 transition-transform"></i>
+            </summary>
+            <p class="mt-3 text-gray-600">Hidratación, reporte breve post-paseo y fotos. En premium: juego y socialización.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+    
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "¿Qué pasa si llueve?","acceptedAnswer": {"@type": "Answer","text": "Paseamos con impermeable y priorizamos rutas seguras. Si la lluvia es intensa, reprogramamos sin costo."}},
+        {"@type": "Question","name": "¿Aceptan perros grandes o reactivos?","acceptedAnswer": {"@type": "Answer","text": "Sí, con evaluación previa y uso de arnés/correa adecuados."}},
+        {"@type": "Question","name": "¿Cómo coordino el horario?","acceptedAnswer": {"@type": "Answer","text": "Escríbenos por WhatsApp y confirmamos la franja disponible el mismo día."}},
+        {"@type": "Question","name": "¿Qué incluyen los paseos?","acceptedAnswer": {"@type": "Answer","text": "Hidratación, reporte breve post-paseo y fotos. En premium: juego y socialización."}}
+      ]
+    }
+    </script>
+  </section>
+
+  
+
+<section class="section py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+          Clientes Felices
+        </h2>
+        <p class="text-xl text-gray-600">Lo que dicen los dueños de nuestras mascotas</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex mb-4" aria-label="Calificación 5 de 5">
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+          </div>
+          <p class="text-gray-600 mb-4">"Mi Max está súper feliz con los paseos. Fabio es muy responsable y amable."</p>
+          <div class="flex items-center">
+            <img 
+              src="https://placehold.co/50x50/E2E8F0/64748B?text=MG" 
+              alt="Cliente María G." 
+              onerror="this.onerror=null;this.src='https://placehold.co/50x50/E2E8F0/64748B?text=MG';"
+              loading="lazy" decoding="async" width="50" height="50" class="w-12 h-12 rounded-full mr-3 bg-gray-200" />
+            <div>
+              <p class="font-semibold">María G.</p>
+              <p class="text-sm text-gray-500">Dueña de Max</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex mb-4" aria-label="Calificación 5 de 5">
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+          </div>
+          <p class="text-gray-600 mb-4">"El mejor servicio de paseo en El Tambo. Totalmente recomendado."</p>
+          <div class="flex items-center">
+             <img 
+              src="https://placehold.co/50x50/E2E8F0/64748B?text=CR" 
+              alt="Cliente Carlos R." 
+              onerror="this.onerror=null;this.src='https://placehold.co/50x50/E2E8F0/64748B?text=CR';"
+              loading="lazy" decoding="async" width="50" height="50" class="w-12 h-12 rounded-full mr-3 bg-gray-200" />
+            <div>
+              <p class="font-semibold">Carlos R.</p>
+              <p class="text-sm text-gray-500">Dueño de Luna</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex mb-4" aria-label="Calificación 5 de 5">
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+            <i data-feather="star" class="text-yellow-400 fill-current"></i>
+          </div>
+          <p class="text-gray-600 mb-4">"Puntualidad y cuidado excepcional. Mi perrita se divierte mucho."</p>
+          <div class="flex items-center">
+             <img 
+              src="https://placehold.co/50x50/E2E8F0/64748B?text=AL" 
+              alt="Cliente Ana L." 
+              onerror="this.onerror=null;this.src='https://placehold.co/50x50/E2E8F0/64748B?text=AL';"
+              loading="lazy" decoding="async" width="50" height="50" class="w-12 h-12 rounded-full mr-3 bg-gray-200" />
+            <div>
+              <p class="font-semibold">Ana L.</p>
+              <p class="text-sm text-gray-500">Dueña de Bella</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+<section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6 grid gap-6 md:grid-cols-3 text-sm text-gray-600">
+      <div>
+        <h3 class="font-semibold text-gray-800 mb-2">Políticas</h3>
+        <ul class="space-y-1 list-disc list-inside">
+          <li>Cancelación sin costo hasta 2h antes.</li>
+          <li>Paseos con correa/arnés obligatorio.</li>
+          <li>Reprogramación por clima severo.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-800 mb-2">Cobertura</h3>
+        <p>El Tambo y Huancayo. Consulta por zonas colindantes.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-800 mb-2">Contacto</h3>
+        <a class="underline hover:text-purple-600" href="https://wa.me/51941444159?text=Hola%20me%20interesa%20un%20paseo.&utm_source=web&utm_medium=cta&utm_campaign=landing">WhatsApp: +51 941 444 159</a>
+      </div>
+    </div>
+  </section>
+
+  
+
+<custom-footer></custom-footer>
+
+  
+
+<a href="https://wa.me/51941444159?text=Hola%20vi%20tu%20p%C3%A1gina%20web%20y%20quisiera%20un%20paseo%20para%20mi%20perro.&utm_source=web&utm_medium=fab&utm_campaign=landing"
+     target="_blank" rel="noopener noreferrer"
+     class="whatsapp-float fixed bottom-8 right-8 bg-gradient-to-r from-green-500 to-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:shadow-green-500/50 transition-all duration-300 z-50 group"
+     aria-label="Chatear por WhatsApp">
+    <i data-feather="message-circle" class="group-hover:scale-110 transition-transform w-8 h-8"></i>
+  </a>
+
+  
+
+<script src="https://unpkg.com/feather-icons" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+  
+
+<script type="module">
+    // --- COMPONENTE NAVBAR ---
+    class CustomNavbar extends HTMLElement {
+      connectedCallback() {
+        this.innerHTML = `
+          <nav class="bg-white bg-opacity-80 backdrop-blur-sm shadow-md sticky top-0 z-40">
+            <div class="container mx-auto px-6"> 
+              <div class="flex justify-between items-center h-16"> 
+
+<a href="#" class="flex items-center h-full py-0.5" aria-label="Happy Dogs Huancayo - Inicio"> 
+                  <img src="https://i.imgur.com/2KfT72H.png" alt="Logo de Happy Dogs Huancayo" class="h-full w-auto"> 
+                </a>
+                
+                
+
+<div class="hidden md:flex items-center space-x-6">
+                  <a href="#sobre-mi" class="text-gray-600 hover:text-purple-600 transition-colors">Sobre mí</a>
+                  <a href="#servicios" class="text-gray-600 hover:text-purple-600 transition-colors">Servicios</a>
+                  <a href="#zona" class="text-gray-600 hover:text-purple-600 transition-colors">Zona</a>
+                  <a href="#faqs" class="text-gray-600 hover:text-purple-600 transition-colors">FAQs</a>
+                  <a href="https://wa.me/51941444159?text=Hola%20vi%20la%20web%20y%20quiero%20reservar%20un%20paseo.&utm_source=web&utm_medium=cta&utm_campaign=landing" 
+                     class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-5 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/50"
+                     aria-label="Reservar por WhatsApp">
+                    Reservar
+                  </a>
+                </div>
+                
+                
+
+<div class="md:hidden">
+                  <button class="navbar-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+                    <div class="space-y-1.5">
+                      <span class="hamburger-line hamburger-top block w-6 h-0.5 bg-gray-700"></span>
+                      <span class="hamburger-line hamburger-middle block w-6 h-0.5 bg-gray-700"></span>
+                      <span class="hamburger-line hamburger-bottom block w-6 h-0.5 bg-gray-700"></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            
+
+<div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg absolute top-full left-0 w-full overflow-hidden transition-all duration-300 max-h-0">
+              <div class="flex flex-col space-y-4 p-6">
+                <a href="#sobre-mi" class="block text-gray-700 hover:text-purple-600">Sobre mí</a>
+                <a href="#servicios" class="block text-gray-700 hover:text-purple-600">Servicios</a>
+                <a href="#zona" class="block text-gray-700 hover:text-purple-600">Zona</a>
+                <a href="#faqs" class="block text-gray-700 hover:text-purple-600">FAQs</a>
+                <a href="https://wa.me/51941444159?text=Hola%20vi%20la%20web%20y%20quiero%20reservar%20un%20paseo.&utm_source=web&utm_medium=cta&utm_campaign=landing" 
+                   class="w-full text-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-5 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/50"
+                   aria-label="Reservar por WhatsApp">
+                  Reservar Ahora
+                </a>
+              </div>
+            </div>
+          </nav>
+        `;
+
+        // Lógica del menú móvil
+        const toggleButton = this.querySelector('.navbar-toggle');
+        const mobileMenu = this.querySelector('#mobile-menu');
+        
+        toggleButton.addEventListener('click', () => {
+          const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+          toggleButton.setAttribute('aria-expanded', !isExpanded);
+          
+          if (isExpanded) {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.style.maxHeight = null;
+          } else {
+            mobileMenu.classList.remove('hidden');
+            // Medir la altura del contenido para animar
+            mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+          }
+        });
+
+        // Cerrar menú al hacer clic en un enlace
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            toggleButton.setAttribute('aria-expanded', 'false');
+            mobileMenu.classList.add('hidden');
+            mobileMenu.style.maxHeight = null;
+          });
+        });
+      }
+    }
+    customElements.define('custom-navbar', CustomNavbar);
+
+    // --- COMPONENTE HERO CAROUSEL ---
+    class HeroCarousel extends HTMLElement {
+      constructor() {
+        super();
+        this.slides = [
+          {
+            img: "https://images.unsplash.com/photo-1543466835-00a7907e9de1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzEyN3wwfDF8c2VhcmNofDN8fGhhcHB5JTIwZG9nfGVufDB8fHx8MTcyOTgzMDI2N3ww&q=80&w=1920",
+            alt: "Perro golden retriever feliz con una pelota",
+            title: "Paseos Seguros y Llenos de Cariño",
+            subtitle: "La mejor hora del día para tu mejor amigo. Puntualidad y responsabilidad en El Tambo y Huancayo."
+          },
+          {
+            img: "https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzEyN3wwfDF8c2VhcmNofDEwfHxkb2clMjB3YWxraW5nJTIwcGFya3xlbnwwfHx8fDE3Mjk4MzAyOTd8MA&q=80&w=1920",
+            alt: "Persona paseando un perro en un parque verde",
+            title: "Expertos en Cuidado Canino",
+            subtitle: "Conocemos las mejores rutas y parques seguros para que tu perro se ejercite y socialice."
+          },
+          {
+            img: "https://images.unsplash.com/photo-1552053831-71594a27632d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzEyN3wwfDF8c2VhcmNofDZ8fGhhcHB5JTIwZG9nfGVufDB8fHx8MTcyOTgzMDI2N3ww&q=80&w=1920",
+            alt: "Primer plano de un perro feliz con la lengua fuera",
+            title: "Tu Perro Merece lo Mejor",
+            subtitle: "Brindamos atención personalizada y mucho amor en cada paseo. ¡Reserva hoy mismo!"
+          }
+        ];
+        this.currentIndex = 0;
+        this.slideInterval = null;
+      }
+
+      connectedCallback() {
+        this.innerHTML = `
+          <section id="inicio" class="relative h-[80vh] md:h-[90vh] text-white overflow-hidden">
+            ${this.slides.map((slide, index) => `
+              <div class="carousel-item absolute inset-0 w-full h-full ${index === 0 ? 'opacity-100' : 'opacity-0'}">
+                <img src="${slide.img}" alt="${slide.alt}" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async" class="w-full h-full object-cover">
+                <div class="carousel-content absolute inset-0 flex flex-col justify-center items-center text-center p-6" data-aos="fade-in" data-aos-duration="1500">
+                  <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-shadow-lg">${slide.title}</h1>
+                  <p class="text-lg md:text-2xl max-w-3xl mb-8 text-shadow">${slide.subtitle}</p>
+                  <a href="#servicios" 
+                     class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 shadow-2xl hover:shadow-purple-500/50 transform hover:scale-105"
+                     aria-label="Ver servicios de paseo">
+                    Ver Servicios
+                  </a>
+                </div>
+              </div>
+            `).join('')}
+          </section>
+        `;
+
+        this.startCarousel();
+      }
+
+      startCarousel() {
+        const items = this.querySelectorAll('.carousel-item');
+        
+        this.slideInterval = setInterval(() => {
+          items[this.currentIndex].classList.remove('opacity-100');
+          items[this.currentIndex].classList.add('opacity-0');
+          
+          this.currentIndex = (this.currentIndex + 1) % items.length;
+          
+          items[this.currentIndex].classList.remove('opacity-0');
+          items[this.currentIndex].classList.add('opacity-100');
+        }, 5000); // Cambia de slide cada 5 segundos
+      }
+
+      disconnectedCallback() {
+        clearInterval(this.slideInterval);
+      }
+    }
+    customElements.define('hero-carousel', HeroCarousel);
+
+    // --- COMPONENTE STATS ANIMADAS ---
+    class AnimatedStats extends HTMLElement {
+      constructor() {
+        super();
+        this.observer = null;
+        this.stats = [
+          { label: "Clientes Felices", value: 42, symbol: "+" },
+          { label: "Años de Experiencia", value: 3, symbol: "+" },
+          { label: "Paseos Seguros", value: 100, symbol: "%" }
+        ];
+      }
+      
+      connectedCallback() {
+        this.innerHTML = `
+          <section class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-6">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                ${this.stats.map((stat, index) => `
+                  <div class="stat-item" data-aos="fade-up" data-aos-delay="${index * 100}">
+                    <span class="stat-number text-5xl font-extrabold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent" data-target="${stat.value}">0</span>
+                    <span classs="text-5xl font-extrabold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">${stat.symbol}</span>
+                    <p class="text-gray-300 text-lg mt-2">${stat.label}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </section>
+        `;
+
+        this.initCountUp();
+      }
+
+      initCountUp() {
+        const count = (el) => {
+          const target = +el.dataset.target;
+          const duration = 1500;
+          const frameDuration = 1000 / 60;
+          const totalFrames = Math.round(duration / frameDuration);
+          const increment = target / totalFrames;
+          let current = 0;
+
+          const updateCount = () => {
+            current += increment;
+            if (current < target) {
+              el.textContent = Math.ceil(current);
+              requestAnimationFrame(updateCount);
+            } else {
+              el.textContent = target;
+            }
+          };
+          
+          requestAnimationFrame(updateCount);
+        };
+
+        this.observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const statNumbers = this.querySelectorAll('.stat-number');
+              statNumbers.forEach(count);
+              this.observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+
+        this.observer.observe(this);
+      }
+      
+      disconnectedCallback() {
+        if (this.observer) {
+          this.observer.disconnect();
+        }
+      }
+    }
+    customElements.define('animated-stats', AnimatedStats);
+
+    // --- COMPONENTE FOOTER ---
+    class CustomFooter extends HTMLElement {
+      connectedCallback() {
+        this.innerHTML = `
+          <footer class="bg-gray-900 text-gray-300 py-16">
+            <div class="container mx-auto px-6">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                
+
+<div>
+                  <h3 class="text-2xl font-bold text-white mb-4">
+                    Happy Dogs <span class="text-purple-400">Huancayo</span>
+                  </h3>
+                  <p class="text-gray-400 mb-6">Paseos seguros, puntuales y llenos de cariño para tu mejor amigo en El Tambo y Huancayo.</p>
+                  <a href="https://wa.me/51941444159?text=Hola%20vi%20la%20web%20y%20quiero%20reservar%20un%20paseo.&utm_source=web&utm_medium=cta&utm_campaign=landing" 
+                     class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/50 inline-flex items-center"
+                     aria-label="Reservar por WhatsApp">
+                    <i data-feather="navigation" class="w-5 h-5 mr-2"></i>
+                    Reservar un Paseo
+                  </a>
+                </div>
+                
+                
+
+<div>
+                  <h4 class="text-xl font-semibold text-white mb-4">Enlaces Rápidos</h4>
+                  <ul class="space-y-3">
+                    <li><a href="#sobre-mi" class="hover:text-purple-400 transition-colors">Sobre mí</a></li>
+                    <li><a href="#servicios" class="hover:text-purple-400 transition-colors">Servicios</a></li>
+                    <li><a href="#zona" class="hover:text-purple-400 transition-colors">Zona de Cobertura</a></li>
+                    <li><a href="#faqs" class="hover:text-purple-400 transition-colors">Preguntas Frecuentes</a></li>
+                  </ul>
+                </div>
+
+                
+
+<div>
+                  <h4 class="text-xl font-semibold text-white mb-4">Contacto</h4>
+                  <ul class="space-y-3">
+                    <li class="flex items-center space-x-3">
+                      <i data-feather="map-pin" class="w-5 h-5 text-purple-400 flex-shrink-0"></i>
+                      <span>El Tambo y Huancayo, Junín</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                      <i data-feather="phone" class="w-5 h-5 text-purple-400 flex-shrink-0"></i>
+                      <a href="https://wa.me/51941444159?text=Hola%20me%20interesa%20un%20paseo.&utm_source=web&utm_medium=cta&utm_campaign=landing" class="hover:text-purple-400 transition-colors">+51 941 444 159</a>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                      <i data-feather="clock" class="w-5 h-5 text-purple-400 flex-shrink-0"></i>
+                      <span>Lun - Sáb: 8:00 AM - 7:00 PM</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              
+
+<div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; ${new Date().getFullYear()} Happy Dogs Huancayo. Todos los derechos reservados.</p>
+              </div>
+            </div>
+          </footer>
+        `;
+        // Re-ejecutar Feather Icons para el footer
+        if (window.feather) {
+          window.feather.replace();
+        }
+      }
+    }
+    customElements.define('custom-footer', CustomFooter);
+
+    // --- INICIALIZACIÓN DE LIBRERÍAS ---
+    document.addEventListener('DOMContentLoaded', () => {
+      // Inicializar Feather Icons
+      if (window.feather) {
+        feather.replace();
+      } else {
+        // Fallback por si el script defer no ha cargado
+        const featherScript = document.querySelector('script[src*="feather-icons"]');
+        featherScript.onload = () => feather.replace();
+      }
+
+      // Inicializar Animate on Scroll (AOS)
+      if (window.AOS) {
+        AOS.init({ duration: 800, once: true, offset: 50 });
+      } else {
+        const aosScript = document.querySelector('script[src*="aos"]');
+        aosScript.onload = () => AOS.init({ duration: 800, once: true, offset: 50 });
+      }
+
+      // Reemplazar íconos de Feather en detalles de FAQs al abrir
+      document.querySelectorAll('#faqs details').forEach(detail => {
+        detail.addEventListener('toggle', () => {
+          if (window.feather) {
+            feather.replace();
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+
